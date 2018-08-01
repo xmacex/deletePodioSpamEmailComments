@@ -41,8 +41,10 @@ console.log("Found " + spamComments.length + " comments to delete");
 spamComments.each((i, c) => {
     c.style.border = '5px red dotted';
     setTimeout(() => {
-	console.log("deleting 💩", c);
+	console.log("deleting 💩", c.dataset.commentId, c);
 	jQuery(c).find('.js-delete-comment').click();
-	jQuery('.confirm-button')[0].click();
+	setTimeout(() => {
+	    jQuery('.confirm-button')[0].click();
+	}, 100);
     }, i * throttling);
 });

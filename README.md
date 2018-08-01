@@ -6,4 +6,10 @@ Super annoying that [Podio](https://podio.com) has weak or nonexisting spam prot
 
 ## Usage
 
-This is used by logging in to Podio as the user on whose behalf the email spams are coming in, setting `spamUid` near the top of the program, and copy+pasting the whole lot to browser console, and then waiting.
+This is used by
+
+1. Logging in to Podio as the user on whose behalf the email spams are coming in
+1. Setting `spamUid` near the top of the program
+1. Copy+pasting the whole lot to browser console
+1. Waiting
+1. Iterating, if there are a lot of spam comments
